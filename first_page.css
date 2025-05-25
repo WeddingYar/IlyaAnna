@@ -1,0 +1,100 @@
+/*первый div c фото и именами*/
+.sm-main__content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*div с фото на первой заставке*/
+.sm-main__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sm-main__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*div с надписями*/
+.text-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*div надпись Save the date*/
+.sm-main_save {
+    position: absolute;
+    top: 8%;  /* Регулируйте это значение по своему вкусу (5-15%) */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(14px, 3vw, 24px);
+    letter-spacing: 0.3em;
+    color: var(--light-text);
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    padding: 0 20px;  /* Защита от прилипания к краям на малых экранах */
+    box-sizing: border-box;
+}
+
+/*div с именами*/
+.names-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    width: auto;
+    max-width: 100%;
+    margin-left: -35%; /* Смещение от левого края */
+}
+
+.name {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--light-text);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+}
+
+.ampersand {
+    font-size: clamp(1.8rem, 7vw, 3.5rem);
+    line-height: 1;
+    font-weight: 300;
+    color: var(--light-text);
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin-left: 45%;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*анимация надпись Save the date*/
+.sm-main_save {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/*анимация div с именами*/
+.names-wrapper {
+    animation: fadeIn 1.5s ease-out 0.3s forwards;
+}
