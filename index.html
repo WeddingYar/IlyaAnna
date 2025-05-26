@@ -12,10 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Playfair+Display:wght@700&family=Cinzel:wght@500&family=Montserrat+Alternates:wght@500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 
     <link href="first_page.css" rel="stylesheet">
     <link href="second_page.css" rel="stylesheet">
     <link href="third_page.css" rel="stylesheet">
+    <link href="fourth_page.css" rel="stylesheet">
 
 
     <style>
@@ -45,6 +47,7 @@
     </style>
 </head>
 <body>
+	<!-- Начальная страница -->
     <div class="sm-main__content">
         <div class="sm-main__img">
             <img src="Images/first_photo.jpg" alt="Илья и Анна">
@@ -61,6 +64,7 @@
         </div>
     </div>
 
+    <!-- Приглашение -->
 	<div class="sm-container">
 		<div class="sm-container__img">
             <img src="Images/moment_fon.jpg">
@@ -80,6 +84,7 @@
         </div>
     </div>
 
+    <!-- Дата и таймер -->
     <div class="sm-date-section">
     	<div class="sm-container__img">
             <img src="Images/moment_fon.jpg">
@@ -172,58 +177,167 @@
 			        <div class="sm-timer__container">
 			            <h2 class="sm-date-cormorantRegular" title="До нашей свадьбы осталось">Осталось</h2>
 			            	<div class="sm-timer-time" id="timer">
-			                    <div class="sm-timer-time_item" id="days">
-			                        <div class="sm-timer-time_numbers">
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">9</span>
-			                            </div>
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">2</span>
-			                            </div>
-			                        </div>
-			                        <div class="sm-timer-time_label">дней</div>
-			                    </div>
-			                    <div class="sm-timer-time_item" id="days">
-			                        <div class="sm-timer-time_numbers">
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">9</span>
-			                            </div>
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">2</span>
-			                            </div>
-			                        </div>
-			                        <div class="sm-timer-time_label">часов</div>
-			                    </div>
-			                    <div class="sm-timer-time_item" id="days">
-			                        <div class="sm-timer-time_numbers">
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">9</span>
-			                            </div>
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">2</span>
-			                            </div>
-			                        </div>
-			                        <div class="sm-timer-time_label">минут</div>
-			                    </div>
-			                    <div class="sm-timer-time_item" id="days">
-			                        <div class="sm-timer-time_numbers">
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">9</span>
-			                            </div>
-			                            <div class="sm-timer-time_number">
-			                                <span class="sm-timer-time_number-span">2</span>
-			                            </div>
-			                        </div>
-			                        <div class="sm-timer-time_label">секунд</div>
-			                    </div>
-			                </div>
+							    <div class="timer__item timer__days">
+							      <div class="sm-timer-time_numbers">
+							          <div class="sm-timer-time_number">
+							              <span class="first_number-span">1</span>
+							          </div>
+							          <div class="sm-timer-time_number">
+							              <span class="second_number-span">2</span>
+							          </div>
+							      </div>
+							      <div class="sm-timer-time_label">дней</div>
+							    </div>
+							    <div class="timer__item timer__hours">
+							        <div class="sm-timer-time_numbers">
+							            <div class="sm-timer-time_number">
+							                <span class="first_number-span">3</span>
+							            </div>
+							            <div class="sm-timer-time_number">
+							                <span class="second_number-span">4</span>
+							            </div>
+							        </div>
+							        <div class="sm-timer-time_label">часов</div>
+							    </div>
+							    <div class="timer__item timer__minutes">
+							        <div class="sm-timer-time_numbers">
+							            <div class="sm-timer-time_number">
+							                <span class="first_number-span">5</span>
+							            </div>
+							            <div class="sm-timer-time_number">
+							                <span class="second_number-span">6</span>
+							            </div>
+							        </div>
+							        <div class="sm-timer-time_label">минут</div>
+							    </div>
+							    <div class="timer__item timer__seconds">
+							      <div class="sm-timer-time_numbers">
+							          <div class="sm-timer-time_number">
+							              <span class="first_number-span">7</span>
+							          </div>
+							          <div class="sm-timer-time_number">
+							              <span class="second_number-span">8</span>
+							          </div>
+							      </div>
+							      <div class="sm-timer-time_label">секунд</div>
+							    </div>
+  							</div>
 			            </div>
 			        </div>
     			</div>
 			</div>
-		
 	</div>
 
+	<!-- Локация -->
+	<div class="location-section">
+  		<div class="location-container">
+    		<!-- Заголовок -->
+	    	<h2 class="location-title">Место проведения</h2>
+	    	<!-- Описание места -->
+    		<div class="location-info">
+    			<p class="description-place">
+        			Наша свадьба пройдет под прозрачным куполом, а самые сокровенные слова мы произнесём на склоне холма
+      			</p>
+      			<h3 class="place-name">Свадебный парк «Клевер»</h3>
+      			
+      			
+      		</div>
+    
+    		<!-- Фотографии места -->
+    		<div class="location-photos">
+      			<div class="photo-frame">
+        			<img src="Images/location.jpg" class="location-photo">
+        			<div class="photo-overlay"></div>
+      			</div>
+      			<div class="photo-frame">
+        			<img src="Images/location_2.jpg" class="location-photo">
+        			<div class="photo-overlay"></div>
+      			</div>
+    		</div>
+    		<!-- Адрес -->
+    		<p class="place-address">
+        		<svg class="location-icon" width="28" height="28" viewBox="0 0 24 24"><path fill="#b76e79" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Ярославская область, Ярославский р-н, п. Дубки, Глэмпинг Клевер
+      		</p>
+      		<!-- Кнопка "Как добраться" -->
+      		<a href="https://yandex.ru/maps/org/svadebny_park_klever/217498784487/?ll=39.799045%2C57.522170&mode=search&sctx=ZAAAAAgBEAAaKAoSCf29FB406UNAESYbD7bYyUxAEhIJdVlMbD6uwz8RcctHUtLDuD8iBgABAgMEBSgKOABAiIYGSAFqAnJ1nQHNzMw9oAEAqAEAvQFPmhDnwgEG56XAn6oGggIo0YHQstCw0LTQtdCx0L3Ri9C5INC%2F0LDRgNC6INC60LvQtdCy0LXRgIoCAJICBjEwMDcwNpoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=39.799045%2C57.522170&source=serp_navig&sspn=0.307939%2C0.106115&text=свадебный%20парк%20клевер&z=12.11" class="direction-btn" target="_blank">
+        Как добраться
+        		<span class="arrow-icon">→</span>
+      		</a>
+   		</div>
+  	</div>
+  	
+	<script type="text/javascript">
+	    // функция склонения
+	    const declensionNum = (num, words) => {
+	      return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]];
+	    };
+
+	    function definition_numbers(num){
+	      if (num < 10){
+	        return [0, num];
+	      }
+	      var one = Math.floor(num/10);
+	      return [Math.floor(num/10), num%10];
+	    }
+
+	    const deadline = new Date(2025, 7, 22);
+	    // находим нужные элементы на странице
+	    let elDays = document.querySelector('.timer__days');
+	    let first_number_day = elDays.querySelector('.first_number-span');
+	    let second_number_day =  elDays.querySelector('.second_number-span');
+
+	    let elHours = document.querySelector('.timer__hours');
+	    let first_number_hour = elHours.querySelector('.first_number-span');
+	    let second_number_hour =  elHours.querySelector('.second_number-span');
+
+	    let elMinutes = document.querySelector('.timer__minutes');
+	    let first_number_minute = elMinutes.querySelector('.first_number-span');
+	    let second_number_minute =  elMinutes.querySelector('.second_number-span');
+
+	    let elSeconds = document.querySelector('.timer__seconds');
+	    let first_number_second = elSeconds.querySelector('.first_number-span');
+	    let second_number_second =  elSeconds.querySelector('.second_number-span');
+
+	    // Функция обновления таймера
+	    const updateTimer = () => {
+	      let diff = Math.max(0, deadline - new Date());
+	      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+	      let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+	      let minutes = Math.floor((diff / (1000 * 60)) % 60);
+	      let seconds = Math.floor((diff / 1000) % 60);
+
+	      first_number_day.textContent = definition_numbers(days)[0];
+	      second_number_day.textContent = definition_numbers(days)[1];
+
+	      first_number_hour.textContent = definition_numbers(hours)[0];
+	      second_number_hour.textContent = definition_numbers(hours)[1];
+	      
+	      first_number_minute.textContent = definition_numbers(minutes)[0];
+	      second_number_minute.textContent = definition_numbers(minutes)[1];
+
+	      first_number_second.textContent = definition_numbers(seconds)[0];
+	      second_number_second.textContent = definition_numbers(seconds)[1];
+
+	      let elemDay = elDays.querySelector('.sm-timer-time_label');
+	      elemDay.textContent = declensionNum(days, ['день', 'дня', 'дней']);
+
+	      let elemHour = elHours.querySelector('.sm-timer-time_label');
+	      elemHour.textContent = declensionNum(hours, ['час', 'часа', 'часов']);
+	      
+	      let elemMinute = elMinutes.querySelector('.sm-timer-time_label');
+	      elemMinute.textContent = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+
+	      let elemSecond = elSeconds.querySelector('.sm-timer-time_label');
+	      elemSecond.textContent = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+
+	      if (diff === 0) {
+	        clearInterval(timerId);
+	      }
+	    };
+	    // Запустите таймер
+	    updateTimer();
+	    const timerId = setInterval(updateTimer, 1000);
+	</script>
 
 </body>
 </html>
