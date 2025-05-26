@@ -99,10 +99,10 @@
 
     function definition_numbers(num){
       if (num < 10){
-        return 0, num;
+        return [0, num];
       }
-      console.log(Math.floot(num/10));
-      return num/10, num%10;
+      var one = Math.floor(num/10);
+      return [Math.floor(num/10), num%10];
     }
 
     const deadline = new Date(2025, 7, 22);
@@ -123,19 +123,45 @@
     let first_number_second = elSeconds.querySelector('.first_number-span');
     let second_number_second =  elSeconds.querySelector('.second_number-span');
 
-    let diff = Math.max(0, deadline - new Date());
-    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    let minutes = Math.floor((diff / (1000 * 60)) % 60);
-    let seconds = Math.floor((diff / 1000) % 60);
+    // Функция обновления таймера
+    const updateTimer = () => {
+      let diff = Math.max(0, deadline - new Date());
+      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      let minutes = Math.floor((diff / (1000 * 60)) % 60);
+      let seconds = Math.floor((diff / 1000) % 60);
 
-    console.log(days);
-    let one, two = definition_numbers(days);
-    console.log(one);
-    // elDays.textContent = String(days).padStart(2, '0');
-    // elHours.textContent = String(hours).padStart(2, '0');
-    // elMinutes.textContent = String(minutes).padStart(2, '0');
-    // elSeconds.textContent = String(seconds).padStart(2, '0');
+      first_number_day.textContent = definition_numbers(days)[0];
+      second_number_day.textContent = definition_numbers(days)[1];
+
+      first_number_hour.textContent = definition_numbers(hours)[0];
+      second_number_hour.textContent = definition_numbers(hours)[1];
+      
+      first_number_minute.textContent = definition_numbers(minutes)[0];
+      second_number_minute.textContent = definition_numbers(minutes)[1];
+
+      first_number_second.textContent = definition_numbers(seconds)[0];
+      second_number_second.textContent = definition_numbers(seconds)[1];
+
+      let elemDay = elDays.querySelector('.sm-timer-time_label');
+      elemDay.textContent = declensionNum(days, ['день', 'дня', 'дней']);
+
+      let elemHour = elHours.querySelector('.sm-timer-time_label');
+      elemHour.textContent = declensionNum(hours, ['час', 'часа', 'часов']);
+      
+      let elemMinute = elMinutes.querySelector('.sm-timer-time_label');
+      elemMinute.textContent = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+
+      let elemSecond = elSeconds.querySelector('.sm-timer-time_label');
+      elemSecond.textContent = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+
+      if (diff === 0) {
+        clearInterval(timerId);
+      }
+    };
+    // Запустите таймер
+    updateTimer();
+    const timerId = setInterval(updateTimer, 1000);
   </script>
 </body>
 </html>
