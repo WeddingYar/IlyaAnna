@@ -1,0 +1,253 @@
+/* Основные стили контейнера */
+.sm-container_timing {
+    /*position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 60px 20px;*/
+    /*box-sizing: border-box;*/
+    /*overflow: hidden;*/
+    padding: 40px 20px;
+    background: white;
+    position: relative;
+}
+
+.sm-time__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Заголовок */
+.timing-title {
+    position: relative;
+    font-size: 4.0rem;
+    font-family: 'Great Vibes';
+    margin-bottom: 40px;
+}
+
+/* Стили для списка тайминга */
+.sm-time__list {
+    position: relative;
+    max-width: 40%;
+    align-items: center;
+    margin: 0 auto;/*
+    padding-left: 0;*/
+}
+
+/* Вертикальная линия */
+.sm-time__list:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 2px;
+    /*transform: translateX(-120px);*/
+    background: rgba(46, 46, 46, 1);
+}
+
+/* Стили для каждой строки тайминга */
+.sm-time__list-row {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    height: 100%;
+}
+
+.sm-time__list-tm {
+    display: flex;
+    width: 100px;
+    /*padding-right: 20px;*/
+    align-items: center;
+    /*font-size: 18px;*/
+    color: #d4a373;
+    /*font-weight: 600;*/
+
+}
+
+.span-time {
+    font-size: 2.0rem;
+    /*font-weight: 500;*/
+    font-family: 'Cinzel';
+    color: rgba(46, 46, 46, 1);
+    /*top: 50%;*/
+    /*padding: 10px 0;*/
+    /*width: 40px;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+
+.sm-time__list-hl {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.sm-time__list-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   /* background-color: #f8f1e9;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: 2px solid rgba(46, 46, 46, 1);
+    z-index: 1;
+}
+
+.sm-time__list-icon img {
+    width: 90%;
+    height: 90%;
+}
+
+.sm-time__list-r {
+    flex: 1;
+}
+
+.sm-time__list-wr {
+    font-size: 2.5rem;
+    color: rgba(46, 46, 46, 1);
+    font-family: 'Great Vibes';
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.sm-time__list-all {
+    font-size: 18px;
+    color: #5a3e2b;
+    font-weight: 500;
+}
+
+/* Анимации и эффекты при наведении */
+.sm-time__list-row:hover .sm-time__list-tm {
+    color: #b5834f;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.sm-time__list-row:hover .sm-time__list-icon {
+    background-color: rgba(46, 46, 46, 0.5);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.sm-time__list-row:hover .sm-time__list-icon img {
+    filter: brightness(0) invert(1);
+}
+
+.sm-time__list-row:hover .sm-time__list-all {
+    color: #3a2a1b;
+    transition: all 0.3s ease;
+}
+
+/* Адаптивность */
+/*@media (max-width: 768px) {
+    .sm-container-timing {
+        padding: 30px 15px;
+    }
+    
+    .sm-time__list:before {
+        left: 70px;
+    }
+    
+    .sm-time__list-tm {
+        width: 70px;
+        font-size: 16px;
+    }
+    
+    .sm-time__list-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+    
+    .sm-time__list-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .sm-time__list-wr {
+        font-size: 14px;
+    }
+    
+    .sm-time__list-all {
+        font-size: 16px;
+    }
+}*/
+/* Адаптивность */
+@media (max-width: 768px) {
+    .timing-title {
+        font-size: 3.0rem;
+    }
+    
+    .sm-time__list {
+        max-width: 100%;
+        padding-left: 20px;
+        font-size: 0.8rem;
+    }
+    
+    .sm-time__list:before {
+        left: 70px;
+    }
+    
+    .sm-time__list-tm {
+        width: 70px;
+    }
+    
+    .sm-time__list-icon {
+        width: 60px;
+        height: 60px;
+        /*left: -25px;*/
+    }
+    
+    .sm-time__list-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .sm-time__list-wr {
+        font-size: 2.5rem;
+    }
+    
+    .sm-time__list-all {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sm-time__list:before {
+        left: 95px;
+    }
+    
+    .sm-time__list-tm {
+        width: 50px;
+        padding-right: 10px;
+    }
+    
+    .span-time {
+        font-size: 1.6rem;
+    }
+    
+    .sm-time__list-icon {
+        width: 60px;
+        height: 60px;
+        left: -30px;
+        margin-right: 10px;
+    }
+    
+    .sm-time__list-wr {
+        font-size: 2.0rem;
+    }
+    
+    .sm-time__list-all {
+        font-size: 1.0rem;
+    }
+}
