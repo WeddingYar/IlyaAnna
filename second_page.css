@@ -180,6 +180,7 @@
     overflow: hidden;
     border-bottom: solid 2px rgba(46, 46, 46, 1);
     border-top: solid 2px rgba(46, 46, 46, 1);
+    background: white;
 }
 
 .sm-banner.sm-wd ul {

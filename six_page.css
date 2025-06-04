@@ -1,0 +1,59 @@
+.sm-container_dress {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+}
+
+/* Шапка */
+.header_dress {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header_dress h1 {
+    font-family: 'Great Vibes';
+    font-size: 4.5rem;
+    color: rgba(46, 46, 46, 1);
+    margin-bottom: 20px;
+}
+
+.header_dress p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Палитра цветов */
+.color-palette {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.color-palette h3 {
+    font-family: 'Playfair Display', serif;
+    color: #5a3e2b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}

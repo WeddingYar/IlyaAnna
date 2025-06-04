@@ -1,7 +1,6 @@
 /* Основные стили контейнера */
 .sm-container_timing {
     padding: 40px 20px;
-    background: white;
     position: relative;
 }
 
@@ -140,7 +139,7 @@
     }
     
     .sm-time__list:before {
-        left: 100px;
+        left: 110px;
     }
     
     .sm-time__list-tm {
@@ -167,7 +166,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 524px) {
     .sm-time__list:before {
         left: 95px;
     }
