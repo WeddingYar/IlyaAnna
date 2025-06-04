@@ -7,10 +7,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-/*
-    position: relative;
-    padding: 80px 0;
-    /*overflow: hidden;*/
 }
 
 .header {
@@ -20,7 +16,7 @@
 
 .header h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     color: #2e2e2e;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -99,4 +95,10 @@
     font-weight: 400;
     line-height: 120%;
     color: rgb(36, 36, 36);
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 3.0rem;
+    }
 }

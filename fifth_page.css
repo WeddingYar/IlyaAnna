@@ -105,7 +105,7 @@
 }
 
 /* Анимации и эффекты при наведении */
-.sm-time__list-row:hover .sm-time__list-tm {
+/*.sm-time__list-row:hover .sm-time__list-tm {
     color: #b5834f;
     transform: scale(1.05);
     transition: all 0.3s ease;
@@ -125,7 +125,7 @@
     color: #3a2a1b;
     transition: all 0.3s ease;
 }
-
+*/
 /* Адаптивность */
 @media (max-width: 768px) {
     .timing-title {
@@ -149,7 +149,6 @@
     .sm-time__list-icon {
         width: 60px;
         height: 60px;
-        /*left: -25px;*/
     }
     
     .sm-time__list-icon img {

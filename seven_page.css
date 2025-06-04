@@ -17,7 +17,7 @@
         
 .wishes-header {
     font-family: 'Great Vibes';
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     color: rgba(46, 46, 46, 1);
     text-align: center;
     margin-bottom: 40px;
@@ -74,7 +74,7 @@
     }
 
     .wishes-header h2 {
-        font-size: 2.8rem;
+        font-size: 3.0rem;
     }
 }
 
@@ -108,6 +108,6 @@
     }
 
     .wishes-header h2 {
-        font-size: 2.8rem;
+        font-size: 3.0rem;
     }
 }
